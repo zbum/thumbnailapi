@@ -4,6 +4,10 @@
 * heic
 * jpeg
 * png
+* gif
+* tiff
+* pdf
+* webp
 
 ## build and run
 * build
