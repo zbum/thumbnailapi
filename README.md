@@ -4,6 +4,16 @@
 * heic
 * jpeg
 * png
+
+## build and run
+* build
+```shell
+$ cd docker && sh build.sh
+```
+* run
+```shell
+$ sh run.sh
+```
 ## apis
 ### convert
 * POST /v1/thumbnail/convert
