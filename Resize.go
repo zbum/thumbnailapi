@@ -47,7 +47,7 @@ func Resize(res http.ResponseWriter, req *http.Request){
 		imageBytesList = append(imageBytesList, image)
 		doorayHeaders = append(doorayHeaders, size + ":" + strconv.Itoa(len(image)))
 	}
-	res.Header().Set("X-Dooray-Content-Lengths", strings.Join(doorayHeaders, ","))
+	res.Header().Set("X-Content-Lengths", strings.Join(doorayHeaders, ","))
 
 	for _,imageBytes := range imageBytesList {
 		res.Write(imageBytes)
